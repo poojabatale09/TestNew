@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Regressionuite">
+	<listeners>
+		<listener
+			class-name="com.qa.listeners.ExtentTestNGIReporterListener" />
+	</listeners>
+	<test  name="Test" >	 
+		<parameter name="Name" value="Pooja"></parameter>
+		<parameter name="lastname" value="Batale"></parameter>
+       
+		<classes>
+			<class name="tests.ValidateLoginTest" />
+			<!--<class name="tests.ContactTest" /> 
+			<class name="tests.DealsTest" />
+            <class name="tests.CalendarTest" />-->
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
+	
